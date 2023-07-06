@@ -1,0 +1,14 @@
+def perform_set_operations(set1, set2):
+    union_set = set1.union(set2)
+    intersection_set = set1.intersection(set2)
+    difference_set = set1.difference(set2)
+    symmetric_difference_set = set1.symmetric_difference(set2)
+
+    print("Union of", set1, "and", set2, "is", union_set)
+    print("Intersection of", set1, "and", set2, "is", intersection_set)
+    print("Difference of", set1, "and", set2, "is", difference_set)
+    print("Symmetric difference of", set1, "and", set2, "is", symmetric_difference_set)
+
+set1 = {0, 1, 2, 3, 4, 5, 6}
+set2 = {2, 4, 6, 8}
+perform_set_operations(set1, set2)
